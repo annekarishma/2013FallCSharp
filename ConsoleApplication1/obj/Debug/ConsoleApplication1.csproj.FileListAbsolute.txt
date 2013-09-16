@@ -4,3 +4,9 @@ c:\users\student\documents\visual studio 2012\Projects\ConsoleApplication1\Conso
 c:\users\student\documents\visual studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
 c:\users\student\documents\visual studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
 c:\users\student\documents\visual studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\student\Documents\GitHub\2013FallCSharp\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\student\Documents\GitHub\2013FallCSharp\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\student\Documents\GitHub\2013FallCSharp\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\student\Documents\GitHub\2013FallCSharp\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\student\Documents\GitHub\2013FallCSharp\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\student\Documents\GitHub\2013FallCSharp\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache

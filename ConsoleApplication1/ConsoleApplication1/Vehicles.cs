@@ -54,3 +54,8 @@ public class Plane : Vehicle
         Log += "\nWe Flew Somewhere";
     }
 }
+var name= processes.Select(x => new {x.ProcessName, x.StratTime});
+}
+}
+}
+
