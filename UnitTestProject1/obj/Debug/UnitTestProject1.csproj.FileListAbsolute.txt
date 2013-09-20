@@ -1,0 +1,7 @@
+C:\Users\anne\Documents\GitHub\2013FallCSharp\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+C:\Users\anne\Documents\GitHub\2013FallCSharp\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+C:\Users\anne\Documents\GitHub\2013FallCSharp\UnitTestProject1\bin\Debug\ConsoleApplication1.exe
+C:\Users\anne\Documents\GitHub\2013FallCSharp\UnitTestProject1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\anne\Documents\GitHub\2013FallCSharp\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
+C:\Users\anne\Documents\GitHub\2013FallCSharp\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+C:\Users\anne\Documents\GitHub\2013FallCSharp\UnitTestProject1\obj\Debug\UnitTestProject1.pdb

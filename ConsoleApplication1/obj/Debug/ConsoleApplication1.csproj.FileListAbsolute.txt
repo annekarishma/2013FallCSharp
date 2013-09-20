@@ -13,3 +13,6 @@ C:\Users\student\Documents\GitHub\2013FallCSharp\ConsoleApplication1\obj\Debug\C
 C:\Users\anne\Documents\GitHub\2013FallCSharp\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
 C:\Users\anne\Documents\GitHub\2013FallCSharp\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
 C:\Users\anne\Documents\GitHub\2013FallCSharp\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\anne\Documents\GitHub\2013FallCSharp\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\anne\Documents\GitHub\2013FallCSharp\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\anne\Documents\GitHub\2013FallCSharp\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
