@@ -15,11 +15,11 @@
         <EntityTypeShape EntityType="Model1.ContactType" Width="1.5" PointX="5.125" PointY="4.5" />
         <AssociationConnector Association="Model1.ContactTypeContact" />
         <EntityTypeShape EntityType="Model1.Phone" Width="1.5" PointX="8" PointY="3.875" />
-        <AssociationConnector Association="Model1.ContactPhone" />
         <EntityTypeShape EntityType="Model1.ContactActivity" Width="1.5" PointX="2.625" PointY="4.75" />
         <AssociationConnector Association="Model1.ContactActivityContact" />
         <EntityTypeShape EntityType="Model1.ActivityType" Width="1.5" PointX="0.5" PointY="3.5" />
         <AssociationConnector Association="Model1.ContactActivityActivityType" />
+        <AssociationConnector Association="Model1.PhoneContact" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
