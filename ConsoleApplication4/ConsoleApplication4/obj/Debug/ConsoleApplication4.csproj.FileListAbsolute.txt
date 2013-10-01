@@ -6,3 +6,6 @@ c:\users\anne\documents\visual studio 2012\Projects\ConsoleApplication4\ConsoleA
 c:\users\anne\documents\visual studio 2012\Projects\ConsoleApplication4\ConsoleApplication4\obj\Debug\ConsoleApplication4.csprojResolveAssemblyReference.cache
 c:\users\anne\documents\visual studio 2012\Projects\ConsoleApplication4\ConsoleApplication4\obj\Debug\ConsoleApplication4.exe
 c:\users\anne\documents\visual studio 2012\Projects\ConsoleApplication4\ConsoleApplication4\obj\Debug\ConsoleApplication4.pdb
+C:\Users\anne\Documents\GitHub\2013FallCSharp\ConsoleApplication4\ConsoleApplication4\bin\Debug\ConsoleApplication4.exe.config
+C:\Users\anne\Documents\GitHub\2013FallCSharp\ConsoleApplication4\ConsoleApplication4\obj\Debug\ConsoleApplication4.exe
+C:\Users\anne\Documents\GitHub\2013FallCSharp\ConsoleApplication4\ConsoleApplication4\obj\Debug\ConsoleApplication4.pdb
