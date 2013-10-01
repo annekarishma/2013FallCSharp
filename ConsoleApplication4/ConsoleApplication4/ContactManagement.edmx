@@ -35,10 +35,6 @@
             <End Role="Contact" EntitySet="Contacts" />
           </AssociationSet>
           <EntitySet Name="Phones" EntityType="Model1.Phone" />
-          <AssociationSet Name="ContactPhone" Association="Model1.ContactPhone">
-            <End Role="Contact" EntitySet="Contacts" />
-            <End Role="Phone" EntitySet="Phones" />
-          </AssociationSet>
           <EntitySet Name="ContactActivities" EntityType="Model1.ContactActivity" />
           <AssociationSet Name="ContactActivityContact" Association="Model1.ContactActivityContact">
             <End Role="ContactActivity" EntitySet="ContactActivities" />
@@ -49,6 +45,10 @@
             <End Role="ContactActivity" EntitySet="ContactActivities" />
             <End Role="ActivityType" EntitySet="ActivityTypes" />
           </AssociationSet>
+          <AssociationSet Name="PhoneContact" Association="Model1.PhoneContact">
+            <End Role="Phone" EntitySet="Phones" />
+            <End Role="Contact" EntitySet="Contacts" />
+          </AssociationSet>
         </EntityContainer>
         <EntityType Name="User">
           <Key>
@@ -57,8 +57,6 @@
           <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Type="String" Name="UserName" Nullable="false" />
           <Property Type="String" Name="OnlineStatus" Nullable="false" />
-          <NavigationProperty Name="ContactList" />
-          <NavigationProperty Name="ContactList1" Relationship="Model1.UserContactList" FromRole="User" ToRole="ContactList" />
         </EntityType>
         <EntityType Name="ContactList">
           <Key>
@@ -88,8 +86,8 @@
           <NavigationProperty Name="ZipLocations" Relationship="Model1.ContactZipLocation" FromRole="Contact" ToRole="ZipLocation" />
           <NavigationProperty Name="ContactType" Relationship="Model1.ContactTypeContact" FromRole="Contact" ToRole="ContactType" />
           <Property Type="Int32" Name="ContactTypeContactTypeId" Nullable="false" />
-          <NavigationProperty Name="Phones" Relationship="Model1.ContactPhone" FromRole="Contact" ToRole="Phone" />
           <NavigationProperty Name="ContactActivities" Relationship="Model1.ContactActivityContact" FromRole="Contact" ToRole="ContactActivity" />
+          <NavigationProperty Name="Phones" Relationship="Model1.PhoneContact" FromRole="Contact" ToRole="Phone" />
         </EntityType>
         <Association Name="ContactListContact">
           <End Type="Model1.ContactList" Role="ContactList" Multiplicity="1" />
@@ -152,20 +150,9 @@
           <Property Type="Int32" Name="PhoneNum" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Type="String" Name="PhoneType" Nullable="false" />
           <Property Type="String" Name="ContactId" Nullable="false" />
-          <NavigationProperty Name="Contact" Relationship="Model1.ContactPhone" FromRole="Phone" ToRole="Contact" />
+          <NavigationProperty Name="Contact" Relationship="Model1.PhoneContact" FromRole="Phone" ToRole="Contact" />
+          <Property Type="Int32" Name="ContactContactId" Nullable="false" />
         </EntityType>
-        <Association Name="ContactPhone">
-          <End Type="Model1.Contact" Role="Contact" Multiplicity="1" />
-          <End Type="Model1.Phone" Role="Phone" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Contact">
-              <PropertyRef Name="ContactId" />
-            </Principal>
-            <Dependent Role="Phone">
-              <PropertyRef Name="ContactContactId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <EntityType Name="ContactActivity">
           <Key>
             <PropertyRef Name="ActivityId" />
@@ -207,6 +194,18 @@
             </Principal>
             <Dependent Role="ContactActivity">
               <PropertyRef Name="ActivityTypeActivityTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="PhoneContact">
+          <End Type="Model1.Phone" Role="Phone" Multiplicity="*" />
+          <End Type="Model1.Contact" Role="Contact" Multiplicity="1" />
+          <ReferentialConstraint>
+            <Principal Role="Contact">
+              <PropertyRef Name="ContactId" />
+            </Principal>
+            <Dependent Role="Phone">
+              <PropertyRef Name="ContactContactId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
