@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl" Namespace="Model1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005">
+        <EntityContainer Name="Model1TargetContainer" >
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="Model1Container" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Users" EntityType="Model1.User" />
+          <EntitySet Name="ContactLists" EntityType="Model1.ContactList" />
+          <AssociationSet Name="UserContactList" Association="Model1.UserContactList">
+            <End Role="User" EntitySet="Users" />
+            <End Role="ContactList" EntitySet="ContactLists" />
+          </AssociationSet>
+          <EntitySet Name="Contacts" EntityType="Model1.Contact" />
+          <AssociationSet Name="ContactListContact" Association="Model1.ContactListContact">
+            <End Role="ContactList" EntitySet="ContactLists" />
+            <End Role="Contact" EntitySet="Contacts" />
+          </AssociationSet>
+          <EntitySet Name="ZipLocations" EntityType="Model1.ZipLocation" />
+          <AssociationSet Name="ContactZipLocation" Association="Model1.ContactZipLocation">
+            <End Role="Contact" EntitySet="Contacts" />
+            <End Role="ZipLocation" EntitySet="ZipLocations" />
+          </AssociationSet>
+          <EntitySet Name="ContactTypes" EntityType="Model1.ContactType" />
+          <AssociationSet Name="ContactTypeContact" Association="Model1.ContactTypeContact">
+            <End Role="ContactType" EntitySet="ContactTypes" />
+            <End Role="Contact" EntitySet="Contacts" />
+          </AssociationSet>
+          <EntitySet Name="Phones" EntityType="Model1.Phone" />
+          <AssociationSet Name="ContactPhone" Association="Model1.ContactPhone">
+            <End Role="Contact" EntitySet="Contacts" />
+            <End Role="Phone" EntitySet="Phones" />
+          </AssociationSet>
+          <EntitySet Name="ContactActivities" EntityType="Model1.ContactActivity" />
+          <AssociationSet Name="ContactActivityContact" Association="Model1.ContactActivityContact">
+            <End Role="ContactActivity" EntitySet="ContactActivities" />
+            <End Role="Contact" EntitySet="Contacts" />
+          </AssociationSet>
+          <EntitySet Name="ActivityTypes" EntityType="Model1.ActivityType" />
+          <AssociationSet Name="ContactActivityActivityType" Association="Model1.ContactActivityActivityType">
+            <End Role="ContactActivity" EntitySet="ContactActivities" />
+            <End Role="ActivityType" EntitySet="ActivityTypes" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="UserName" Nullable="false" />
+          <Property Type="String" Name="OnlineStatus" Nullable="false" />
+          <NavigationProperty Name="ContactList" />
+          <NavigationProperty Name="ContactList1" Relationship="Model1.UserContactList" FromRole="User" ToRole="ContactList" />
+        </EntityType>
+        <EntityType Name="ContactList">
+          <Key>
+            <PropertyRef Name="ContactListId" />
+          </Key>
+          <Property Type="Int32" Name="ContactListId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Id" Nullable="false" />
+          <NavigationProperty Name="User" Relationship="Model1.UserContactList" FromRole="ContactList" ToRole="User" />
+          <NavigationProperty Name="Contacts" Relationship="Model1.ContactListContact" FromRole="ContactList" ToRole="Contact" />
+        </EntityType>
+        <Association Name="UserContactList">
+          <End Type="Model1.User" Role="User" Multiplicity="1" />
+          <End Type="Model1.ContactList" Role="ContactList" Multiplicity="1" />
+        </Association>
+        <EntityType Name="Contact">
+          <Key>
+            <PropertyRef Name="ContactId" />
+          </Key>
+          <Property Type="Int32" Name="ContactId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="ContactListId" Nullable="false" />
+          <Property Type="String" Name="FirstName" Nullable="false" />
+          <Property Type="String" Name="LastName" Nullable="false" />
+          <Property Type="String" Name="EmailId" Nullable="false" />
+          <Property Type="String" Name="Fax" Nullable="false" />
+          <NavigationProperty Name="ContactList" Relationship="Model1.ContactListContact" FromRole="Contact" ToRole="ContactList" />
+          <Property Type="Int32" Name="ContactListContactListId" Nullable="false" />
+          <NavigationProperty Name="ZipLocations" Relationship="Model1.ContactZipLocation" FromRole="Contact" ToRole="ZipLocation" />
+          <NavigationProperty Name="ContactType" Relationship="Model1.ContactTypeContact" FromRole="Contact" ToRole="ContactType" />
+          <Property Type="Int32" Name="ContactTypeContactTypeId" Nullable="false" />
+          <NavigationProperty Name="Phones" Relationship="Model1.ContactPhone" FromRole="Contact" ToRole="Phone" />
+          <NavigationProperty Name="ContactActivities" Relationship="Model1.ContactActivityContact" FromRole="Contact" ToRole="ContactActivity" />
+        </EntityType>
+        <Association Name="ContactListContact">
+          <End Type="Model1.ContactList" Role="ContactList" Multiplicity="1" />
+          <End Type="Model1.Contact" Role="Contact" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ContactList">
+              <PropertyRef Name="ContactListId" />
+            </Principal>
+            <Dependent Role="Contact">
+              <PropertyRef Name="ContactListContactListId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="ZipLocation">
+          <Key>
+            <PropertyRef Name="ZipCode" />
+          </Key>
+          <Property Type="Int32" Name="ZipCode" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="City" Nullable="false" />
+          <Property Type="String" Name="State" Nullable="false" />
+          <NavigationProperty Name="Contact" Relationship="Model1.ContactZipLocation" FromRole="ZipLocation" ToRole="Contact" />
+          <Property Type="Int32" Name="ContactContactId" Nullable="true" />
+        </EntityType>
+        <Association Name="ContactZipLocation">
+          <End Type="Model1.Contact" Role="Contact" Multiplicity="0..1" />
+          <End Type="Model1.ZipLocation" Role="ZipLocation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Contact">
+              <PropertyRef Name="ContactId" />
+            </Principal>
+            <Dependent Role="ZipLocation">
+              <PropertyRef Name="ContactContactId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="ContactType">
+          <Key>
+            <PropertyRef Name="ContactTypeId" />
+          </Key>
+          <Property Type="Int32" Name="ContactTypeId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="TypeDesc" Nullable="false" />
+          <NavigationProperty Name="Contacts" Relationship="Model1.ContactTypeContact" FromRole="ContactType" ToRole="Contact" />
+        </EntityType>
+        <Association Name="ContactTypeContact">
+          <End Type="Model1.ContactType" Role="ContactType" Multiplicity="1" />
+          <End Type="Model1.Contact" Role="Contact" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ContactType">
+              <PropertyRef Name="ContactTypeId" />
+            </Principal>
+            <Dependent Role="Contact">
+              <PropertyRef Name="ContactTypeContactTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Phone">
+          <Key>
+            <PropertyRef Name="PhoneNum" />
+          </Key>
+          <Property Type="Int32" Name="PhoneNum" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="PhoneType" Nullable="false" />
+          <Property Type="String" Name="ContactId" Nullable="false" />
+          <NavigationProperty Name="Contact" Relationship="Model1.ContactPhone" FromRole="Phone" ToRole="Contact" />
+        </EntityType>
+        <Association Name="ContactPhone">
+          <End Type="Model1.Contact" Role="Contact" Multiplicity="1" />
+          <End Type="Model1.Phone" Role="Phone" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Contact">
+              <PropertyRef Name="ContactId" />
+            </Principal>
+            <Dependent Role="Phone">
+              <PropertyRef Name="ContactContactId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="ContactActivity">
+          <Key>
+            <PropertyRef Name="ActivityId" />
+          </Key>
+          <Property Type="Int32" Name="ActivityId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="ActivityTypeId" Nullable="false" />
+          <Property Type="String" Name="DateofActivity" Nullable="false" />
+          <NavigationProperty Name="Contact" Relationship="Model1.ContactActivityContact" FromRole="ContactActivity" ToRole="Contact" />
+          <Property Type="Int32" Name="ContactContactId" Nullable="false" />
+          <NavigationProperty Name="ActivityType" Relationship="Model1.ContactActivityActivityType" FromRole="ContactActivity" ToRole="ActivityType" />
+          <Property Type="Int32" Name="ActivityTypeActivityTypeId" Nullable="false" />
+        </EntityType>
+        <Association Name="ContactActivityContact">
+          <End Type="Model1.ContactActivity" Role="ContactActivity" Multiplicity="*" />
+          <End Type="Model1.Contact" Role="Contact" Multiplicity="1" />
+          <ReferentialConstraint>
+            <Principal Role="Contact">
+              <PropertyRef Name="ContactId" />
+            </Principal>
+            <Dependent Role="ContactActivity">
+              <PropertyRef Name="ContactContactId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="ActivityType">
+          <Key>
+            <PropertyRef Name="ActivityTypeId" />
+          </Key>
+          <Property Type="Int32" Name="ActivityTypeId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="ActivityTypeDesc" Nullable="false" />
+          <NavigationProperty Name="ContactActivities" Relationship="Model1.ContactActivityActivityType" FromRole="ActivityType" ToRole="ContactActivity" />
+        </EntityType>
+        <Association Name="ContactActivityActivityType">
+          <End Type="Model1.ContactActivity" Role="ContactActivity" Multiplicity="*" />
+          <End Type="Model1.ActivityType" Role="ActivityType" Multiplicity="1" />
+          <ReferentialConstraint>
+            <Principal Role="ActivityType">
+              <PropertyRef Name="ActivityTypeId" />
+            </Principal>
+            <Dependent Role="ContactActivity">
+              <PropertyRef Name="ActivityTypeActivityTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
+        <Alias Key="Model" Value="Model1" />
+        <Alias Key="Target" Value="Model1.Store" />
+        <EntityContainerMapping CdmEntityContainer="Model1Container" StorageEntityContainer="Model1TargetContainer">
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
