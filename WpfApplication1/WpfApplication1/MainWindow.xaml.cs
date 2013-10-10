@@ -20,9 +20,26 @@ namespace WpfApplication1
     /// </summary>
     public partial class MainWindow : Window
     {
+        string Team = "X";
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var b = sender as Button;
+            if (Team == "X")
+            {
+                Team = "O";
+                b.Background = Brushes.AliceBlue;
+            }
+            else
+            {
+                Team = "X";
+                b.Background = Brushes.PaleVioletRed;
+            }
+            b.Content = Team;
         }
     }
 }
