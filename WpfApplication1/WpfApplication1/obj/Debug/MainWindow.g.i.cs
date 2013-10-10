@@ -37,7 +37,15 @@ namespace WpfApplication1 {
     /// <summary>
     /// MainWindow
     /// </summary>
-    public partial class MainWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {
+    public partial class MainWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector, System.Windows.Markup.IStyleConnector {
+        
+        
+        #line 37 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button button;
+        
+        #line default
+        #line hidden
         
         private bool _contentLoaded;
         
@@ -69,32 +77,35 @@ namespace WpfApplication1 {
         void System.Windows.Markup.IComponentConnector.Connect(int connectionId, object target) {
             switch (connectionId)
             {
-            case 1:
-            
-            #line 18 "..\..\MainWindow.xaml"
-            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.Button_Click_1);
-            
-            #line default
-            #line hidden
-            return;
             case 2:
-            
-            #line 21 "..\..\MainWindow.xaml"
-            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.Button_Click_2);
-            
-            #line default
-            #line hidden
-            return;
-            case 3:
-            
-            #line 22 "..\..\MainWindow.xaml"
-            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.Button_Click_3);
-            
-            #line default
-            #line hidden
+            this.button = ((System.Windows.Controls.Button)(target));
             return;
             }
             this._contentLoaded = true;
+        }
+        
+        [System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "4.0.0.0")]
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Never)]
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Design", "CA1033:InterfaceMethodsShouldBeCallableByChildTypes")]
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily")]
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
+        void System.Windows.Markup.IStyleConnector.Connect(int connectionId, object target) {
+            System.Windows.EventSetter eventSetter;
+            switch (connectionId)
+            {
+            case 1:
+            eventSetter = new System.Windows.EventSetter();
+            eventSetter.Event = System.Windows.Controls.Primitives.ButtonBase.ClickEvent;
+            
+            #line 14 "..\..\MainWindow.xaml"
+            eventSetter.Handler = new System.Windows.RoutedEventHandler(this.Button_Click);
+            
+            #line default
+            #line hidden
+            ((System.Windows.Style)(target)).Setters.Add(eventSetter);
+            break;
+            }
         }
     }
 }
