@@ -1,0 +1,162 @@
+﻿<UserControl x:Class="ContactManagement.Views.ContactDetailView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:ViewModels="clr-namespace:ContactManagement.ViewModels">
+   
+    <UserControl.DataContext>
+        <ViewModels:ContactDetailViewModel/>
+    </UserControl.DataContext>
+    <UserControl.Resources>
+        <!--TextBoxErrorTemplate is used to show validation Errors. Bind this to any control you wish to validate.-->
+        <ControlTemplate x:Key="TextBoxErrorTemplate">
+            <DockPanel LastChildFill="True">
+                <TextBlock DockPanel.Dock="Bottom" Foreground="Red" FontSize="6pt" 
+                           Text="{Binding ElementName=MyAdorner,Path=AdornedElement.(Validation.Errors)[0].ErrorContent}"/>
+                <Border BorderBrush="Red" BorderThickness="1" Width="120" >
+                    <AdornedElementPlaceholder Name="MyAdorner" />
+                </Border>
+            </DockPanel>
+        </ControlTemplate>
+    </UserControl.Resources>
+    <Grid Name="GridPatientDetailView">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="30" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="1" Name="GridPatientControl" 
+              HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="10*"  />
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="10*" />
+            </Grid.RowDefinitions>
+
+            <Label Name="LblID" Content="Id :" 
+               Grid.Row="0" Grid.Column="0" 
+               HorizontalAlignment="Right" />
+            <Label Name="LblName" Content="Name :"
+               Grid.Row="1" Grid.Column="0" 
+               HorizontalAlignment="Right" />
+            <Label Name="LblMobileNumber" Content="Mobile No. :"
+               Grid.Row="2" Grid.Column="0" 
+               HorizontalAlignment="Right" />
+            <Label Name="LblEmail" Content="EmailId :"
+               Grid.Row="3" Grid.Column="0" 
+               HorizontalAlignment="Right" />
+            <Label Name="LblCity" Content="City :"
+               Grid.Row="4" Grid.Column="0" 
+               HorizontalAlignment="Right" />
+            <Label Name="LblState" Content="State :"
+               Grid.Row="5" Grid.Column="0" 
+               HorizontalAlignment="Right" />
+
+            <TextBox Name="TbxId" 
+                 Grid.Row="0" Grid.Column="1" 
+                 HorizontalAlignment="Left"
+                 Validation.ErrorTemplate="{StaticResource TextBoxErrorTemplate}">
+                <TextBox.Text>
+                    <Binding Path="Id">
+                        <Binding.ValidationRules>
+                            <ExceptionValidationRule />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+
+            <TextBox Name="TbxName" 
+                 Grid.Row="1" Grid.Column="1" 
+                 HorizontalAlignment="Left" 
+                 Text="{Binding Path=Name}"/>
+            <TextBox Name="TbxMobileNumber" 
+                 Grid.Row="2" Grid.Column="1" 
+                 HorizontalAlignment="Left" >
+                <TextBox.Text>
+                    <Binding Path="MobileNumber">
+                        <Binding.ValidationRules>
+                            <ExceptionValidationRule />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+            <TextBox Name="TbxEmail" 
+                 Grid.Row="3" Grid.Column="1" 
+                 HorizontalAlignment="Left" 
+                 Text="{Binding Path=EmailId}"/>
+            <TextBox Name="TbxCity" 
+                 Grid.Row="4" Grid.Column="1" 
+                 HorizontalAlignment="Left" 
+                 Text="{Binding Path=City}"/>
+            <TextBox Name="TbxState" 
+                 Grid.Row="5" Grid.Column="1" 
+                 HorizontalAlignment="Left" 
+                 Text="{Binding Path=State}"/>
+
+            <Grid Name="GridBtns" 
+                  Grid.Row="6" Grid.ColumnSpan="2" 
+                  HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Name="BtnAdd" Content="Add"
+                    Grid.Column="0" 
+                    HorizontalAlignment="Center" 
+                    Command="{Binding AddPatientCmd}"/>
+                <Button Name="BtnSearch" Content="Search"
+                    Grid.Column="1" 
+                    HorizontalAlignment="Center"
+                    Command="{Binding SearchPatientCmd}"/>
+                <Button Name="BtnDelete" Content="Delete"
+                    Grid.Column="2" 
+                    HorizontalAlignment="Center"
+                    Command="{Binding DeletePatientCmd}"/>
+
+            </Grid>
+
+        </Grid>
+        <ListView Name="LstPatients" 
+                  Grid.Column="6" 
+                  ItemsSource="{Binding Path = Contacts}" 
+                  SelectedItem="{Binding Path = SelectedPatient}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Id" 
+                                    Width="50"
+                                    DisplayMemberBinding="{Binding Path=Id}" />
+                    <GridViewColumn Header="Name" 
+                                    Width="100"
+                                    DisplayMemberBinding="{Binding Path=Name}" />
+                    <GridViewColumn Header="MobileNo" 
+                                    Width="100"
+                                    DisplayMemberBinding="{Binding Path=MobileNumber}" />
+
+                    <GridViewColumn Header="EmailId" 
+                                    Width="100"
+                                    DisplayMemberBinding="{Binding Path=EmailId}" />
+                    <GridViewColumn Header="City" 
+                                    Width="100"
+                                    DisplayMemberBinding="{Binding Path=City}" />
+                    <GridViewColumn Header="State" 
+                                    Width="100"
+                                    DisplayMemberBinding="{Binding Path=State}" />
+
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+
+
+</UserControl>
