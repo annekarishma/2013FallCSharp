@@ -1,0 +1,25 @@
+﻿<Window x:Class="BasicContacts.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="139*"/>
+        </Grid.RowDefinitions>
+        <TextBox Text="{Binding Text, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Stretch" Margin="10,10,90,10" TextWrapping="Wrap" VerticalAlignment="Stretch"/>
+        <Button Content="Button" HorizontalAlignment="Right" Margin="10,10,10,10" VerticalAlignment="Stretch" Width="75" Command="{Binding AddCommand}" />
+        <GridSplitter HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Height="10" />
+        <ListBox ItemsSource="{Binding List}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <CheckBox IsChecked="{Binding Done}"></CheckBox>
+                        <TextBlock Text="{Binding Title}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+    </Grid>
+</Window>

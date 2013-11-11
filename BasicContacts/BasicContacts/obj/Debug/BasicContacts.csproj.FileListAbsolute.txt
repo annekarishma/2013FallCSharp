@@ -1,0 +1,17 @@
+c:\users\anne\documents\visual studio 2012\Projects\BasicContacts\BasicContacts\bin\Debug\BasicContacts.exe.config
+C:\Users\anne\Documents\Visual Studio 2012\Projects\BasicContacts\BasicContacts\bin\Debug\BasicContacts.exe
+C:\Users\anne\Documents\Visual Studio 2012\Projects\BasicContacts\BasicContacts\bin\Debug\BasicContacts.pdb
+C:\Users\anne\Documents\Visual Studio 2012\Projects\BasicContacts\BasicContacts\obj\Debug\BasicContacts.csprojResolveAssemblyReference.cache
+C:\Users\anne\Documents\Visual Studio 2012\Projects\BasicContacts\BasicContacts\obj\Debug\MainWindow.baml
+C:\Users\anne\Documents\Visual Studio 2012\Projects\BasicContacts\BasicContacts\obj\Debug\MainWindow.g.cs
+C:\Users\anne\Documents\Visual Studio 2012\Projects\BasicContacts\BasicContacts\obj\Debug\App.g.cs
+C:\Users\anne\Documents\Visual Studio 2012\Projects\BasicContacts\BasicContacts\obj\Debug\BasicContacts_MarkupCompile.cache
+C:\Users\anne\Documents\Visual Studio 2012\Projects\BasicContacts\BasicContacts\obj\Debug\BasicContacts.g.resources
+C:\Users\anne\Documents\Visual Studio 2012\Projects\BasicContacts\BasicContacts\obj\Debug\BasicContacts.Properties.Resources.resources
+C:\Users\anne\Documents\Visual Studio 2012\Projects\BasicContacts\BasicContacts\obj\Debug\BasicContacts.csproj.GenerateResource.Cache
+C:\Users\anne\Documents\Visual Studio 2012\Projects\BasicContacts\BasicContacts\obj\Debug\BasicContacts.exe
+C:\Users\anne\Documents\Visual Studio 2012\Projects\BasicContacts\BasicContacts\obj\Debug\BasicContacts.pdb
+C:\Users\anne\Documents\Visual Studio 2012\Projects\BasicContacts\BasicContacts\obj\Debug\BrowserWindow.baml
+C:\Users\anne\Documents\Visual Studio 2012\Projects\BasicContacts\BasicContacts\obj\Debug\BrowserWindow.g.cs
+C:\Users\anne\Documents\Visual Studio 2012\Projects\BasicContacts\BasicContacts\obj\Debug\ContactsWindows.g.cs
+C:\Users\anne\Documents\Visual Studio 2012\Projects\BasicContacts\BasicContacts\obj\Debug\BasicContacts_MarkupCompile.lref
