@@ -1,0 +1,64 @@
+C:\Users\Indu\Documents\Visual Studio 2008\Projects\ContactManagement\ContactManagement\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Indu\Documents\Visual Studio 2008\Projects\ContactManagement\ContactManagement\obj\Debug\Views\ContactDetailView.g.cs
+C:\Users\Indu\Documents\Visual Studio 2008\Projects\ContactManagement\ContactManagement\obj\Debug\App.g.cs
+C:\Users\Indu\Documents\Visual Studio 2008\Projects\ContactManagement\ContactManagement\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Indu\Documents\Visual Studio 2008\Projects\ContactManagement\ContactManagement\obj\Debug\ContactManagement_MarkupCompile.cache
+C:\Users\Indu\Documents\Visual Studio 2008\Projects\ContactManagement\ContactManagement\obj\Debug\ContactManagement_MarkupCompile.lref
+C:\Users\Indu\Documents\Visual Studio 2008\Projects\ContactManagement\ContactManagement\bin\Debug\ContactManagement.exe
+C:\Users\Indu\Documents\Visual Studio 2008\Projects\ContactManagement\ContactManagement\bin\Debug\ContactManagement.pdb
+C:\Users\Indu\Documents\Visual Studio 2008\Projects\ContactManagement\ContactManagement\obj\Debug\MainWindow.g.cs
+C:\Users\Indu\Documents\Visual Studio 2008\Projects\ContactManagement\ContactManagement\obj\Debug\MainWindow.baml
+C:\Users\Indu\Documents\Visual Studio 2008\Projects\ContactManagement\ContactManagement\obj\Debug\Views\ContactDetailView.baml
+C:\Users\Indu\Documents\Visual Studio 2008\Projects\ContactManagement\ContactManagement\obj\Debug\ContactManagement.g.resources
+C:\Users\Indu\Documents\Visual Studio 2008\Projects\ContactManagement\ContactManagement\obj\Debug\ContactManagement.Properties.Resources.resources
+C:\Users\Indu\Documents\Visual Studio 2008\Projects\ContactManagement\ContactManagement\obj\Debug\ContactManagement.csproj.GenerateResource.Cache
+C:\Users\Indu\Documents\Visual Studio 2008\Projects\ContactManagement\ContactManagement\obj\Debug\ContactManagement.exe
+C:\Users\Indu\Documents\Visual Studio 2008\Projects\ContactManagement\ContactManagement\obj\Debug\ContactManagement.pdb
+C:\Users\anne\Downloads\ContactManagement\ContactManagement\obj\Debug\ContactManagement.exe
+C:\Users\anne\Downloads\ContactManagement\ContactManagement\obj\Debug\ContactManagement.pdb
+C:\Users\anne\Downloads\ContactManagement\ContactManagement\bin\Debug\ContactManagement.exe
+C:\Users\anne\Downloads\ContactManagement\ContactManagement\bin\Debug\ContactManagement.pdb
+C:\Users\anne\Downloads\ContactManagement\ContactManagement\obj\Debug\ContactManagement.csprojResolveAssemblyReference.cache
+C:\Users\anne\Downloads\ContactManagement\ContactManagement\obj\Debug\MainWindow.g.cs
+C:\Users\anne\Downloads\ContactManagement\ContactManagement\obj\Debug\Views\ContactDetailView.g.cs
+C:\Users\anne\Downloads\ContactManagement\ContactManagement\obj\Debug\App.g.cs
+C:\Users\anne\Downloads\ContactManagement\ContactManagement\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\anne\Downloads\ContactManagement\ContactManagement\obj\Debug\ContactManagement_MarkupCompile.cache
+C:\Users\anne\Downloads\ContactManagement\ContactManagement\obj\Debug\ContactManagement_MarkupCompile.lref
+C:\Users\anne\Downloads\ContactManagement\ContactManagement\obj\Debug\MainWindow.baml
+C:\Users\anne\Downloads\ContactManagement\ContactManagement\obj\Debug\Views\ContactDetailView.baml
+C:\Users\anne\Downloads\ContactManagement\ContactManagement\obj\Debug\ContactManagement.g.resources
+C:\Users\anne\Downloads\ContactManagement\ContactManagement\obj\Debug\ContactManagement.Properties.Resources.resources
+C:\Users\anne\Downloads\ContactManagement\ContactManagement\obj\Debug\ContactManagement.csproj.GenerateResource.Cache
+C:\Users\anne\Documents\Visual Studio 2012\Projects\ContactManagement\ContactManagement\obj\Debug\ContactManagement.exe
+C:\Users\anne\Documents\Visual Studio 2012\Projects\ContactManagement\ContactManagement\obj\Debug\ContactManagement.pdb
+C:\Users\anne\Documents\Visual Studio 2012\Projects\ContactManagement\ContactManagement\bin\Debug\ContactManagement.exe
+C:\Users\anne\Documents\Visual Studio 2012\Projects\ContactManagement\ContactManagement\bin\Debug\ContactManagement.pdb
+C:\Users\anne\Documents\Visual Studio 2012\Projects\ContactManagement\ContactManagement\obj\Debug\ContactManagement.csprojResolveAssemblyReference.cache
+C:\Users\anne\Documents\Visual Studio 2012\Projects\ContactManagement\ContactManagement\obj\Debug\MainWindow.g.cs
+C:\Users\anne\Documents\Visual Studio 2012\Projects\ContactManagement\ContactManagement\obj\Debug\Views\ContactDetailView.g.cs
+C:\Users\anne\Documents\Visual Studio 2012\Projects\ContactManagement\ContactManagement\obj\Debug\App.g.cs
+C:\Users\anne\Documents\Visual Studio 2012\Projects\ContactManagement\ContactManagement\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\anne\Documents\Visual Studio 2012\Projects\ContactManagement\ContactManagement\obj\Debug\ContactManagement_MarkupCompile.cache
+C:\Users\anne\Documents\Visual Studio 2012\Projects\ContactManagement\ContactManagement\obj\Debug\ContactManagement_MarkupCompile.lref
+C:\Users\anne\Documents\Visual Studio 2012\Projects\ContactManagement\ContactManagement\obj\Debug\MainWindow.baml
+C:\Users\anne\Documents\Visual Studio 2012\Projects\ContactManagement\ContactManagement\obj\Debug\Views\ContactDetailView.baml
+C:\Users\anne\Documents\Visual Studio 2012\Projects\ContactManagement\ContactManagement\obj\Debug\ContactManagement.g.resources
+C:\Users\anne\Documents\Visual Studio 2012\Projects\ContactManagement\ContactManagement\obj\Debug\ContactManagement.Properties.Resources.resources
+C:\Users\anne\Documents\Visual Studio 2012\Projects\ContactManagement\ContactManagement\obj\Debug\ContactManagement.csproj.GenerateResource.Cache
+C:\Users\anne\Documents\GitHub\2013FallCSharp\ContactManagement\ContactManagement\obj\Debug\ContactManagement.exe
+C:\Users\anne\Documents\GitHub\2013FallCSharp\ContactManagement\ContactManagement\obj\Debug\ContactManagement.pdb
+C:\Users\anne\Documents\GitHub\2013FallCSharp\ContactManagement\ContactManagement\bin\Debug\ContactManagement.exe
+C:\Users\anne\Documents\GitHub\2013FallCSharp\ContactManagement\ContactManagement\bin\Debug\ContactManagement.pdb
+C:\Users\anne\Documents\GitHub\2013FallCSharp\ContactManagement\ContactManagement\obj\Debug\ContactManagement.csprojResolveAssemblyReference.cache
+C:\Users\anne\Documents\GitHub\2013FallCSharp\ContactManagement\ContactManagement\obj\Debug\MainWindow.g.cs
+C:\Users\anne\Documents\GitHub\2013FallCSharp\ContactManagement\ContactManagement\obj\Debug\Views\ContactDetailView.g.cs
+C:\Users\anne\Documents\GitHub\2013FallCSharp\ContactManagement\ContactManagement\obj\Debug\App.g.cs
+C:\Users\anne\Documents\GitHub\2013FallCSharp\ContactManagement\ContactManagement\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\anne\Documents\GitHub\2013FallCSharp\ContactManagement\ContactManagement\obj\Debug\ContactManagement_MarkupCompile.cache
+C:\Users\anne\Documents\GitHub\2013FallCSharp\ContactManagement\ContactManagement\obj\Debug\ContactManagement_MarkupCompile.lref
+C:\Users\anne\Documents\GitHub\2013FallCSharp\ContactManagement\ContactManagement\obj\Debug\MainWindow.baml
+C:\Users\anne\Documents\GitHub\2013FallCSharp\ContactManagement\ContactManagement\obj\Debug\Views\ContactDetailView.baml
+C:\Users\anne\Documents\GitHub\2013FallCSharp\ContactManagement\ContactManagement\obj\Debug\ContactManagement.g.resources
+C:\Users\anne\Documents\GitHub\2013FallCSharp\ContactManagement\ContactManagement\obj\Debug\ContactManagement.Properties.Resources.resources
+C:\Users\anne\Documents\GitHub\2013FallCSharp\ContactManagement\ContactManagement\obj\Debug\ContactManagement.csproj.GenerateResource.Cache

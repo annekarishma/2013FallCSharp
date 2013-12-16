@@ -1,18 +1,18 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactManagement", "ContactManagement\ContactManagement.csproj", "{373FD404-DE52-48B7-B660-A0EFD703372C}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contactmanagement", "Contactmanagement\Contactmanagement.csproj", "{40BCC9D4-0A1C-4B2B-8803-80316BC1D8CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{373FD404-DE52-48B7-B660-A0EFD703372C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{373FD404-DE52-48B7-B660-A0EFD703372C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{373FD404-DE52-48B7-B660-A0EFD703372C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{373FD404-DE52-48B7-B660-A0EFD703372C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40BCC9D4-0A1C-4B2B-8803-80316BC1D8CE}.Debug|x86.ActiveCfg = Debug|x86
+		{40BCC9D4-0A1C-4B2B-8803-80316BC1D8CE}.Debug|x86.Build.0 = Debug|x86
+		{40BCC9D4-0A1C-4B2B-8803-80316BC1D8CE}.Release|x86.ActiveCfg = Release|x86
+		{40BCC9D4-0A1C-4B2B-8803-80316BC1D8CE}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

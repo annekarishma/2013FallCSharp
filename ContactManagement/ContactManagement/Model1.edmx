@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ContactDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="ContactDBModelStoreContainer">
+          <EntitySet Name="Details" EntityType="ContactDBModel.Store.Details" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="Details">
+          <Key>
+            <PropertyRef Name="fName" />
+          </Key>
+          <Property Name="fName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="lName" Type="nvarchar" MaxLength="50" />
+          <Property Name="contactNo" Type="varchar" MaxLength="50" />
+          <Property Name="PrimaryEmailID" Type="nvarchar" MaxLength="50" />
+          <Property Name="SecondryEmailID" Type="varchar" MaxLength="50" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ContactDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="ContactDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Details" EntityType="ContactDBModel.Detail" />
+        </EntityContainer>
+        <EntityType Name="Detail">
+          <Key>
+            <PropertyRef Name="fName" />
+          </Key>
+          <Property Type="String" Name="fName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="lName" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="contactNo" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="PrimaryEmailID" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SecondryEmailID" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ContactDBModelStoreContainer" CdmEntityContainer="ContactDBEntities">
+          <EntitySetMapping Name="Details">
+            <EntityTypeMapping TypeName="ContactDBModel.Detail">
+              <MappingFragment StoreEntitySet="Details">
+                <ScalarProperty Name="SecondryEmailID" ColumnName="SecondryEmailID" />
+                <ScalarProperty Name="PrimaryEmailID" ColumnName="PrimaryEmailID" />
+                <ScalarProperty Name="contactNo" ColumnName="contactNo" />
+                <ScalarProperty Name="lName" ColumnName="lName" />
+                <ScalarProperty Name="fName" ColumnName="fName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model1">
+        <EntityTypeShape EntityType="ContactDBModel.Detail" Width="1.5" PointX="0.75" PointY="0.75" Height="1.9802864583333326" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

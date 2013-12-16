@@ -1,0 +1,40 @@
+C:\Users\indiradevig\Desktop\indu\Contactmanagement\Contactmanagement\obj\x86\Debug\App.g.cs
+C:\Users\indiradevig\Desktop\indu\Contactmanagement\Contactmanagement\obj\x86\Debug\Contactmanagement_MarkupCompile.cache
+C:\Users\indiradevig\Desktop\indu\Contactmanagement\Contactmanagement\obj\x86\Debug\MainWindow.baml
+C:\Users\indiradevig\Desktop\indu\Contactmanagement\Contactmanagement\obj\x86\Debug\MainWindow.g.cs
+C:\Users\indiradevig\Desktop\indu\Contactmanagement\Contactmanagement\obj\x86\Debug\Contactmanagement.g.resources
+C:\Users\indiradevig\Desktop\indu\Contactmanagement\Contactmanagement\obj\x86\Debug\Contactmanagement.Properties.Resources.resources
+C:\Users\indiradevig\Desktop\indu\Contactmanagement\Contactmanagement\obj\x86\Debug\Contactmanagement.csproj.GenerateResource.Cache
+C:\Users\indiradevig\Desktop\indu\Contactmanagement\Contactmanagement\bin\Debug\Contactmanagement.exe.config
+C:\Users\indiradevig\Desktop\indu\Contactmanagement\Contactmanagement\bin\Debug\Contactmanagement.exe
+C:\Users\indiradevig\Desktop\indu\Contactmanagement\Contactmanagement\bin\Debug\Contactmanagement.pdb
+C:\Users\indiradevig\Desktop\indu\Contactmanagement\Contactmanagement\obj\x86\Debug\Contactmanagement.exe
+C:\Users\indiradevig\Desktop\indu\Contactmanagement\Contactmanagement\obj\x86\Debug\Contactmanagement.pdb
+C:\Users\indiradevig\Desktop\12-10\second\Contactmanagement\Contactmanagement\bin\Debug\Contactmanagement.exe.config
+C:\Users\indiradevig\Desktop\12-10\second\Contactmanagement\Contactmanagement\obj\x86\Debug\Contactmanagement.exe
+C:\Users\indiradevig\Desktop\12-10\second\Contactmanagement\Contactmanagement\obj\x86\Debug\Contactmanagement.pdb
+C:\Users\indiradevig\Desktop\12-10\second\Contactmanagement\Contactmanagement\obj\x86\Debug\MainWindow.baml
+C:\Users\indiradevig\Desktop\12-10\second\Contactmanagement\Contactmanagement\obj\x86\Debug\MainWindow.g.cs
+C:\Users\indiradevig\Desktop\12-10\second\Contactmanagement\Contactmanagement\obj\x86\Debug\App.g.cs
+C:\Users\indiradevig\Desktop\12-10\second\Contactmanagement\Contactmanagement\obj\x86\Debug\Contactmanagement_MarkupCompile.cache
+C:\Users\indiradevig\Desktop\12-10\second\Contactmanagement\Contactmanagement\obj\x86\Debug\Contactmanagement.g.resources
+C:\Users\indiradevig\Desktop\12-10\second\Contactmanagement\Contactmanagement\obj\x86\Debug\Contactmanagement.Properties.Resources.resources
+C:\Users\indiradevig\Desktop\12-10\second\Contactmanagement\Contactmanagement\obj\x86\Debug\Contactmanagement.csproj.GenerateResource.Cache
+C:\Users\indiradevig\Desktop\12-10\second\Contactmanagement\Contactmanagement\bin\Debug\Contactmanagement.exe
+C:\Users\indiradevig\Desktop\12-10\second\Contactmanagement\Contactmanagement\bin\Debug\Contactmanagement.pdb
+C:\Users\anne\Documents\Visual Studio 2012\Projects\second\ContactManagement\Contactmanagement\bin\Debug\Contactmanagement.exe.config
+C:\Users\anne\Documents\Visual Studio 2012\Projects\second\ContactManagement\Contactmanagement\obj\x86\Debug\Contactmanagement.exe
+C:\Users\anne\Documents\Visual Studio 2012\Projects\second\ContactManagement\Contactmanagement\obj\x86\Debug\Contactmanagement.pdb
+C:\Users\anne\Documents\Visual Studio 2012\Projects\second\ContactManagement\Contactmanagement\bin\Debug\Contactmanagement.exe
+C:\Users\anne\Documents\Visual Studio 2012\Projects\second\ContactManagement\Contactmanagement\bin\Debug\Contactmanagement.pdb
+C:\Users\anne\Documents\Visual Studio 2012\Projects\second\ContactManagement\Contactmanagement\obj\x86\Debug\MainWindow.baml
+C:\Users\anne\Documents\Visual Studio 2012\Projects\second\ContactManagement\Contactmanagement\obj\x86\Debug\MainWindow.g.cs
+C:\Users\anne\Documents\Visual Studio 2012\Projects\second\ContactManagement\Contactmanagement\obj\x86\Debug\App.g.cs
+C:\Users\anne\Documents\Visual Studio 2012\Projects\second\ContactManagement\Contactmanagement\obj\x86\Debug\Contactmanagement_MarkupCompile.cache
+C:\Users\anne\Documents\Visual Studio 2012\Projects\second\ContactManagement\Contactmanagement\obj\x86\Debug\Contactmanagement.g.resources
+C:\Users\anne\Documents\Visual Studio 2012\Projects\second\ContactManagement\Contactmanagement\obj\x86\Debug\Contactmanagement.Properties.Resources.resources
+C:\Users\anne\Documents\Visual Studio 2012\Projects\second\ContactManagement\Contactmanagement\obj\x86\Debug\Contactmanagement.csproj.GenerateResource.Cache
+C:\Users\anne\Documents\Visual Studio 2012\Projects\second\ContactManagement\Contactmanagement\obj\x86\Debug\Contactmanagement.csprojResolveAssemblyReference.cache
+C:\Users\anne\Documents\Visual Studio 2012\Projects\ContactManagement\Contactmanagement\bin\Debug\Contactmanagement.exe.config
+C:\Users\anne\Documents\Visual Studio 2012\Projects\ContactManagement\Contactmanagement\obj\x86\Debug\Contactmanagement.exe
+C:\Users\anne\Documents\Visual Studio 2012\Projects\ContactManagement\Contactmanagement\obj\x86\Debug\Contactmanagement.pdb
